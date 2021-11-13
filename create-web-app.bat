@@ -10,7 +10,7 @@ dnscmd /RecordAdd %1 @ NS ns2.%1
 if not exist "C:\inetpub\www\%1\http" mkdir C:\inetpub\www\%1\http
 if not exist "C:\db\%1\" mkdir C:\db\%1
 cd c:\Windows\System32\inetsrv
-appcmd add site /name:%1 /physicalPath:c:\vhosts\%1 /bindings:http/*:80:%1
+appcmd add site /name:%1 /physicalPath:C:\inetpub\www\%1\http /bindings:http/*:80:%1
 appcmd add apppool /name:%1
 appcmd set site /site.name:%1 /[path='/'].applicationPool:%1
 cd \
