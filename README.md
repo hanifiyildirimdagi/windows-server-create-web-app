@@ -2,7 +2,7 @@
 >Shell script for hosting web applications on IIS on Windows servers.
 ## Using
 The first parameter you send is the domain name you want to create.
-Göndereceğiniz ikinci parametre ise, sunucunuzun public IP adresidir. 
+The second parameter you will send is the public IP address of your server.
 ```
 create-web-app exampledomainname.com 66.102.14.0
 create-web-app [domain-name] [public-ip-address]
